@@ -1,0 +1,406 @@
+global-reset()
+
+@import "fonts.styl"
+
+html
+	overflow-x hidden
+
+body 
+	overflow-x hidden
+	
+.container
+	width 1024px
+	margin 0 auto
+	
+/*------------ PAGE-HEADER -------------*/
+	.page-header
+		background url("../images/background1.jpg") no-repeat center/cover
+		text-align: center;
+		position relative
+		overflow hidden
+		
+		.container
+			position relative
+		
+		.header-content
+			padding: 57px 0 65px 0;
+			position: relative;
+			z-index: 2;
+		
+		.logo
+			display: inline-block;
+		
+		.logo_text
+			font-family 'DSGoose'
+			color #fff
+			font-size 19px
+
+		
+		.header-content_line-1
+			position relative
+			text-shadow: 2px 2px 4px #301605;
+			font-family 'DSGoose'
+			font-size: 48px;
+			margin: 93px 0 26px 0;
+			text-transform uppercase
+
+			&:after
+				content: attr(data-text)
+				display: block
+				font-family: inherit
+				font-size: inherit
+				position: absolute
+				top:0
+				left:0
+				bottom:0
+				right:0
+				background: linear-gradient(#c8f009 25%, #7ebb2f 57%);
+				-webkit-background-clip: text;
+				color: transparent;
+				text-shadow: none
+		
+		.header-content_line-1_divider-1
+			width: 33px;
+			height: 5px;
+			background: #8fdf15;
+			display: inherit;
+			position: absolute;
+			left: 30.6%;
+			top: 15px;
+			transform: rotate(9deg);
+			border 1px solid #000
+		
+		.header-content_line-1_divider-2
+			width: 44px;
+			height: 5px;
+			background: #8fdf15;
+			display: inherit;
+			position: absolute;
+			right: 30.5%;
+			top: 15px;
+			transform: rotate(-9deg);
+			border 1px solid #000
+		
+		.header-content_line-2
+			font-family 'DSGoose'
+			font-size: 51px;
+			text-transform uppercase
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		
+		.header-content_line-3
+			font-family 'DSGoose'
+			font-size: 60px;
+			margin: -1px 0 0 0;
+			text-transform uppercase
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		
+		.header-content_span-1
+			position relative
+			text-shadow: 2px 2px 4px #301605;
+			line-height 1
+			font-family a_MachinaOrtoSls-Bold
+			font-size: 99px;
+			margin: 0 11px 0 0px;
+
+			&:after
+				content: attr(data-text)
+				display: block
+				font-family: inherit
+				font-size: inherit
+				position: absolute
+				top:0
+				left:0
+				bottom:0
+				right:0
+				background: linear-gradient(#ffd700 25%, #ff7a04 57%);
+				-webkit-background-clip: text;
+				color: transparent;
+				text-shadow: none
+				line-height 1
+		
+		.header-content_span-2
+			position relative
+			text-shadow: 2px 2px 4px #301605;
+			line-height 1.3
+			margin: 0 11px 0 0px;
+			font-size: 49px;
+
+			&:after
+				content: attr(data-text)
+				display: block
+				font-family: inherit
+				font-size: inherit
+				position: absolute
+				top:0
+				left:0
+				bottom:0
+				right:0
+				background: linear-gradient(#fff 25%, #cfcfcf 57%);
+				-webkit-background-clip: text;
+				color: transparent;
+				text-shadow: none
+				line-height 1.3
+		
+		.icon_header
+			position absolute
+		
+		.human-1
+			top 180px
+			left -242px
+			z-index 2
+		
+		.tablet
+			bottom: 124px;
+			left: 50.5%;
+			z-index: 1;
+			transform: translate(-50%);
+		
+		.tablet_text
+			position: absolute;
+			top: 44px;
+			right: 477px;
+			color: #fff;
+			font-family: 'beermoney'
+			font-size: 46px;
+			text-transform: uppercase;
+			transform: rotate(10deg);
+			line-height: 0.8;
+		
+		.tablet_text_span-1
+			font-size 63px
+		
+		.tablet_text_span-2
+			font-size 36px
+		
+		.header-content_icon
+			position absolute
+			left: 46.3%;
+			top: 35%;
+		
+		.bg-smoke
+			position: absolute;
+			bottom: 205px;
+			z-index: 1;
+			width: 100%;
+			height: 419px;
+			background url("../images/smoke2.png") left/auto 100% repeat-x
+			animation bg_moove 20s infinite linear
+		
+		.bg-smoke-1
+			position: absolute;
+			bottom: 205px;
+			z-index: 1;
+			width: 100%;
+			height: 419px;
+			background url("../images/smoke2.png") left/auto 100% repeat-x
+			animation bg_moove 30s infinite linear
+			
+		.upper-layer
+			position: absolute;
+			top: -179px;
+			left: 0
+			z-index: 3;
+		
+		.leaf
+			position absolute
+			bottom: -221px;
+			right: -12px;
+			z-index: 2;
+		
+		.stone
+			position absolute
+			left: 0;
+			bottom: 203px;
+		
+		@keyframes bg_moove
+			from
+				background-position 0 0
+			to 
+				background-position 1920px 0
+				
+	.aztec-ornament
+		background url("../images/background2.jpg") no-repeat 62% 55%
+		padding 105px 0
+		position relative
+		background-color #fff
+		
+		.container
+			position relative
+		
+		.btn
+			background url("../images/btn-1.png") no-repeat center/cover
+			text-decoration none
+			color #000
+			font 30px 'DSGoose'
+			display: inline-block;
+			transition filter 0.2s
+			z-index: 3;
+			position: absolute;
+			width: 518px;
+			height: 232px;
+			text-transform uppercase
+			top: -136px;
+			left: 50%;
+			transform: translate(-50%);
+		
+		.btn_span
+			position absolute
+			top 46%
+			left 50%
+			transform translate(-50%)
+			font-size 39px
+			color #fff
+		
+		.btn_link
+			width: 376px;
+			height: 83px;
+			position: absolute;
+			bottom: -38px;
+			left: 50%
+			transform: translate(-50%);
+			cursor pointer
+			z-index 4
+			
+			&:hover + .btn
+				background url("../images/btn-2.png") no-repeat center/cover
+		
+		#smoke_left
+			left: -57px;
+			top: -111px;
+			transform: rotate(-45deg);
+		
+		#smoke_right
+			right: -57px;
+			top: -111px;
+			transform: rotate(45deg);
+		
+		.smoke
+			width: 120px;
+			position: absolute;
+			height: 180px;
+		
+		span
+			position: absolute;
+			display: block;
+			margin-bottom: 10px;
+			width: 32px;
+			height: 32px;
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAt1BMVEUAAAAEBAQJCQkGBgYODg4MDAweHh4UFBQREREZGRk9PT0jIyMuLi40NDRNTU0pKSl8fHxxcXFBQUGysrJTU1O9vb24uLilpaWCgoJqampfX186Ojrb29vLy8usrKypqamYmJiOjo50dHRlZWVaWlrh4eGgoKCbm5tGRkb39/fS0tJ3d3f6+vrz8/Pu7u7X19fBwcG1tbW0tLSvr6+SkpKHh4dJSUno6Ojd3d3Pz8/j4+PT09P///+yKQXrAAAAPHRSTlMAAwgGDgseFBEZPSMuNE0pfHBBslO9uKWCal8528usqZiOdGVa4aCbRvfSd/rz7tfBtbSvkodJ6N3P49N41aWSAAACDUlEQVR4AZWSV7LbMAxFQ4q9q0vuvdiv95d4/+sK6DKxMs5H8OOxcHhxwOGP/6qEYIQwof/qI+4No9z72wTCXG/SNrPOSXQzX5hsX728tfNe/xaBqHbhdfk4noTZwhCc/M1gbmflYDvIX+q3oBiPvt0FmJsMtnfLx1352nx4zSCkEyB9L3+8O9x/fj2tC6X6RkLGlQHRdp4/HA6H+8FrWLii6GtOr1cUtmjH9wA8DOsmzNtWGUauV9RZbzbZbQ93y3I9bdL5IrMMX63I1CJ9n1Sf24ev72q8mqaLjRb4aoAvwqSu8+Hy5+DXsMzrpjCMJ5c+gjvovY/yUfW0Ww52w6eymjrPOELnfkJllr6vV/V4VA2/h2VZPjcbJmhyIhDGVKrZejrbT1d5lT8/v+SruQEAJ2eACMI2aVq4dvY2Ho9G9aRVWhJyvktQ5ECozJq+Kvbr0WoaehmjhMOQkwIhQgjpvbGZW6ShCfu54kRwSY5AkiQIaM687avM9dIQUqfjEUkRigC4IEoJs0pFIDSps4wfFY6WyVEWC6mN6X9sMld8KKN5XOKyxulBMibjFOONUoZJTjHUETibylhMa6mt9ZpxEPjz7ECEUg7HCKaCaQZpovOeAAApfhrMZfxFCF0DEEAEgaIJin9Ar0skoEQopiROjgDqAKdVTp2YQOIVnvvdOQRSEJDQv1GXhO7X39CnJ9d7/vktAAAAAElFTkSuQmCC');
+			animation: move 1.5s infinite linear;
+			opacity: 0;
+			bottom: 0;
+			left: 40px;
+		
+		@keyframes move
+			from
+				opacity: 0;
+				bottom: 0;
+				transform: scale(1);
+			5%
+				opacity: .5;
+			90%
+				opacity: 0;
+			to
+				opacity: 0;
+				transform: scale(4);
+				bottom: 100%;
+				
+
+/*------------ REGISTRATION -------------*/
+	.registration
+		text-transform uppercase
+		background #83430d
+		margin: 0 0 -91px 0;
+		box-shadow: inset 0 -28px 53px 60px rgba(0,0,0,0.5);
+		
+		.registration-items
+			margin: -34px 0 0 0;
+			display flex
+			flex-direction row
+			justify-content space-between
+			&.visible
+				.registration-item
+					opacity 1
+					transform translateX(0)
+					
+		.registration-item
+			display flex
+			flex-direction row
+			width 345px
+			height 242px
+			position relative
+			opacity 0
+			transform translateY(20%)
+			transition opacity 500ms, transform 500ms
+		
+		.registration-item-1
+			background url("../images/registration-item.png") no-repeat center/cover
+			
+		.registration-item-2
+			background url("../images/registration-item-2.png") no-repeat center/cover
+		
+		.registration-item-3
+			background url("../images/registration-item-3.png") no-repeat center/cover
+
+		.registration-content
+			padding: 43px 51px 0 51px;
+			text-align center
+
+		.registration-tagline-1
+			font-family 'DSGoose'
+			color #fff
+			font-size: 24px;
+			margin: 0 0 9px 0;
+		
+		.registration-text
+			font-family 'DINPro-Bold'
+			font-size: 16px;
+			text-shadow: 2px 2px 4px #301605;
+			line-height 1.3
+			color #ffe7b3
+			
+			
+/*------------ FOOTER -------------*/
+	.page-footer
+		background url("../images/bg-footer.jpg") no-repeat center/cover
+		.providers
+			padding: 113px 0 32px 0;
+		
+		.payments
+			padding: 21px 0 23px 0;
+			position relative
+			background: rgba(255,255,255,0.01);
+		
+		.providers-wrap,
+		.payments-wrap
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		
+		.payments-wrap
+			padding: 0 0 22px 0;
+		
+		.divider
+			height 2px
+			width 100%
+			background #3b3f46
+		
+		.footer-text
+			font-family "DINPro"
+			color #959ea7
+			text-align center
+			padding: 24px 0 0 0;
+			line-height: 1.2;
+		
+		.footer-icon-1
+			position absolute
+			top 31px
+			right 327px
+
+@import "media.styl"
